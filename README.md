@@ -1,3 +1,10 @@
 # wiki2sdgs
-@Shea2014 mentioned that
+
+---
+output:
+  md_document:
+    variant: markdown_github
 bibliography: references.bib
+---
+
+[@Shea2014] mentioned that

@@ -29,3 +29,8 @@ The work method can be summarized in the following steps:
 3. Retrieve the geolocation for each city using the [PositionStack](https://positionstack.com) API
 4. Use the locations retrieved in step 3 to get all the linked Wikipedia articles titles using the [Wikimedia Geosearch](https://www.mediawiki.org/wiki/API:Geosearch) API method
 5. Retrieve the article parsed content (raw text) using the article title retrieved in step 4 through the [Wikimedia action](https://www.mediawiki.org/wiki/API:Main_page#Uses_for_the_MediaWiki_Action_API) API method
+6. Retrieve the SDGs base documentns listed in the sdgs_titles.json file
+7. Create BERT-based Sentence Embeddings for the SDGS documents and the Wikiepdia-Geolocated documents
+8. Compute the cosin similarity between each SDGS document and the Wikiepdia-Geolocated documents
+9. For each SDG, get those  Wikiepdia-Geolocated documents with cosine similarity score score greater than the threshold
+10. Feed the filtered documents into the BERT-based regression model

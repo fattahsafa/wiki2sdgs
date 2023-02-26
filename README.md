@@ -34,3 +34,7 @@ The work method can be summarized in the following steps:
 8. Compute the cosin similarity between each SDGS document and the Wikiepdia-Geolocated documents
 9. For each SDG, get those  Wikiepdia-Geolocated documents with cosine similarity score score greater than the threshold
 10. Feed the filtered documents into the BERT-based regression model
+
+## Experiment
+We devided the data into training and test sets with (0.7, 0.3) ratio, respectivaly and trained our Wikipedia Embedding (WE) model using a Root Mean Squared Error loss function, 10 epochs and batch size of 16. The country list contains the following 21 MENA countries: Egypt, Morocco, Tunisia, Libya, Sudan, Mauritania, Jordan, Lebanon, Turkey, Syria, Egypt, Iraq, Saudi Arabia, Yemen, Cyprus, Qatar, Oman, Iran, United Arab Emirates, Kuwait and Bahrain. The model was trained on two V100 GPU each with 24 GB memory.
+

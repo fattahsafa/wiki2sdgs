@@ -40,6 +40,10 @@ We devided the data into training and test sets with (0.7, 0.3) ratio, respectiv
 
 ## Results
 We ran the expirement with different similarity lower score threshold and recordeed the rms value for each, as shown in table 1 below.
+--- in progress ---
 
 ## Conclusion
 In this project we verified the use of geolocated Wikipedia articles for socioeconomic applications. We did this by obtaining vector representations of articles on creating sentence embeds for SDG-like geolocated Wikipedia articles. We then combined these latent embeds with survey data and evaluated models to predict poverty outcomes: a Wikipedia embed model. Using this framework, we found that Wikipedia articles are informative about socioeconomic indicators. We have tested this model against the first SDG indicator, ie end poverty in all its forms everywhere, and we have achieved reasonable results as measured by the RMSE. The geolocated Wikipedia article dataset finds application not only in poverty analysis, but also in more general socio-economic forecasts, such as B. Educational and health-related outcomes. We hope that this approach will accelerate progress towards the UN SDGs by improving the way we estimate missing socio-economic indicators, particularly in developing countries, with the aim of improving responses from regional governments and international aid organizations.
+
+## Run the code
+--- in progress ---

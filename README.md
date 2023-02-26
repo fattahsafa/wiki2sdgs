@@ -22,3 +22,10 @@ To accomplish that, we retrieve Wikipedia articles linked to each contry using [
 An additional challenge is posed by the by the type and the length of the articles. Some articles are short (less than 200 words), were generated automatically from structued knwoledge bases or don't really have usefull information related to the DSGs goals. These articles affected the model performance performance. To filter these articles out, we build a semantic similarity model to find the similarity between each Wikipedia article and set of base articles for each SDG. Then, filter those articles with similarity score less than a threshoold. After that, we built a regression model from the filrted articles.
 
 The last challenge is the lack of baseline data. To build a regression model you need to have labeled data, which are the poverty level per country in our case. These data is not officially available for all countries in the last couple of years in the Unitied Nations reosouces. To overcome this issue, we relied on other sources to get the povery level data, such as [Statistica](https://www.statista.com/statistics/1237041/poverty-headcount-ratio-in-egypt) and [Unicef](https://www.unicef.org).
+
+The work method can be summarized in the following steps:
+1. Retrieve the list of countries from a text file
+2. Retrieve the cities in each country using the [CountriesNow API](https://countriesnow.space) API
+3. Retrieve the geolocation for each city using the [PositionStack](https://positionstack.com) API
+4. Use the locations retrieved in step 3 to get all the linked Wikipedia articles titles using the [Wikimedia Geosearch](https://www.mediawiki.org/wiki/API:Geosearch) API method
+5. Retrieve the article parsed content (raw text) using the article title retrieved in step 4 through the [Wikimedia action](https://www.mediawiki.org/wiki/API:Main_page#Uses_for_the_MediaWiki_Action_API) API method

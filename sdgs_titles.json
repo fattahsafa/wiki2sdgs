@@ -1,0 +1,104 @@
+{
+    "Goal 1": {
+        "title":"No Poverty",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_1"
+        ]
+    },
+    "Goal 2": {
+        "title":"Zero Unger",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_2"
+        ]
+    },
+    "Goal 3": {
+        "title":"Good Health and Well-being",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_3"
+        ]
+    },
+    "Goal 4": {
+        "title":"Quality Education",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_4"
+        ]
+    },
+    "Goal 5": {
+        "title":"Gender Equality",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_5"
+        ]
+    },
+    "Goal 6": {
+        "title":"Clean Water and Sanitation",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_6"
+        ]
+    },
+    "Goal 7": {
+        "title":"Affordable and Clean Engergy",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_7"
+        ]
+    },
+    "Goal 8": {
+        "title":"Decent Work and Economic Growth",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_8"
+        ]
+    },
+    "Goal 9": {
+        "title":"Industry, Innovation and Infrastructure",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_9"
+        ]
+    },
+    "Goal 10": {
+        "title":"Reduced Inequalities",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_10"
+        ]
+    },
+    "Goal 11": {
+        "title":"Sustainable Cities and Communities",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_11"
+        ]
+    },
+    "Goal 12": {
+        "title":"Responsuble Consumption and Prodcution",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_12"
+        ]
+    },
+    "Goal 13": {
+        "title":"Climate Action",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_13"
+        ]
+    },
+    "Goal 14": {
+        "title":"Life Below Water",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_14"
+        ]
+    },
+    "Goal 15": {
+        "title":"Life on Land",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_15"
+        ]
+    },
+    "Goal 16": {
+        "title":"Peace, Justice and Strong Institutions",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_16"
+        ]
+    },
+    "Goal 17": {
+        "title":"Partnerships for the Goals",
+        "articles": [
+            "https://en.wikipedia.org/wiki/Sustainable_Development_Goal_17"
+        ]
+    }
+}

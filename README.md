@@ -39,13 +39,12 @@ The work method can be summarized in the following steps:
 We devided the data into training and test sets with (0.7, 0.3) ratio, respectivaly and trained our Wikipedia Embedding (WE) model using a Root Mean Squared Error loss function, 10 epochs, 0.1 dropout, and batch size of 16. The country list contains the following 21 MENA countries: Egypt, Morocco, Tunisia, Libya, Sudan, Mauritania, Jordan, Lebanon, Turkey, Syria, Egypt, Iraq, Saudi Arabia, Yemen, Cyprus, Qatar, Oman, Iran, United Arab Emirates, Kuwait and Bahrain. The model was trained on two V100 GPU each with 24 GB memory.
 
 ## Results
-We ran the expirement with different similarity lower score threshold and recordeed the rms value for each. Figure 1 shows the number of articles that are kept after using different similarity scores.
-![# of Articles Filtered-in Per Similarity Threshold ](https://user-images.githubusercontent.com/1752446/221652907-36220860-852d-4cee-bcbf-c85835718c45.png)
-
-And figure 2 shows the recorded observed Rmse per epoch for each test.
+We ran the expirement with different similarity lower score threshold and recordeed the Rmse value for each. And figure 1 shows the recorded observed Rmse per epoch for each test.
 ![RMSE@different Similarity Scores vs EPOCH](https://user-images.githubusercontent.com/1752446/221683714-0a980358-7d60-41f9-812a-480a4de90c9c.png)
 
-From figure 2, the lowest Rmse value is obtained at similarity threshold =0.2 and the 8th epoch.
+The lowest Rmse value is obtained at the 8th epoch when similarity threshold= 0.2. This doesn't fit well with our initial expectations where Rmse value should be improved when filtering out the less similar articles. However, when having a deep look at the filtered articles, we found that the number of remaining articles is significantly dropped when the lower similarity threshold is greater than 0.3, as shown in figure 2. This means the dataset becomes insufficient to build a robust model.
+
+![# of Articles Filtered-in Per Similarity Threshold ](https://user-images.githubusercontent.com/1752446/221652907-36220860-852d-4cee-bcbf-c85835718c45.png)
 ## Conclusion
 In this project we verified the use of geolocated Wikipedia articles for socioeconomic applications. We did this by obtaining vector representations of articles on creating sentence embeds for SDG-like geolocated Wikipedia articles. We then combined these latent embeds with survey data and evaluated models to predict poverty outcomes: a Wikipedia embed model. Using this framework, we found that Wikipedia articles are informative about socioeconomic indicators. We have tested this model against the first SDG indicator, ie end poverty in all its forms everywhere, and we have achieved reasonable results as measured by the RMSE. The geolocated Wikipedia article dataset finds application not only in poverty analysis, but also in more general socio-economic forecasts, such as B. Educational and health-related outcomes. We hope that this approach will accelerate progress towards the UN SDGs by improving the way we estimate missing socio-economic indicators, particularly in developing countries, with the aim of improving responses from regional governments and international aid organizations.
 

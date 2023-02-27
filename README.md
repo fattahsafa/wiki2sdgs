@@ -46,4 +46,7 @@ We ran the expirement with different similarity lower score threshold and record
 In this project we verified the use of geolocated Wikipedia articles for socioeconomic applications. We did this by obtaining vector representations of articles on creating sentence embeds for SDG-like geolocated Wikipedia articles. We then combined these latent embeds with survey data and evaluated models to predict poverty outcomes: a Wikipedia embed model. Using this framework, we found that Wikipedia articles are informative about socioeconomic indicators. We have tested this model against the first SDG indicator, ie end poverty in all its forms everywhere, and we have achieved reasonable results as measured by the RMSE. The geolocated Wikipedia article dataset finds application not only in poverty analysis, but also in more general socio-economic forecasts, such as B. Educational and health-related outcomes. We hope that this approach will accelerate progress towards the UN SDGs by improving the way we estimate missing socio-economic indicators, particularly in developing countries, with the aim of improving responses from regional governments and international aid organizations.
 
 ## Run the code
---- in progress ---
+To run the code:
+1. Update the countries.txt file with the countries list
+2. Run wikipedia_crawler.ipynb to retrieve the Wikipedia articles geographically linked to the countries. A new Article directory will be created in the same workspace directory along with country_articles.json file that contains the retrieved articles and their paths
+3. Run sdgs_classifie.ipynb to build the model

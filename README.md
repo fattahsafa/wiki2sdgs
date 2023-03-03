@@ -36,7 +36,31 @@ The work method can be summarized in the following steps:
 10. Feed the filtered documents into a BERT-based regression model
 
 ## Experiment
-We devided the data into training and test sets with (0.7, 0.3) ratio, respectivaly and trained our Wikipedia Embedding (WE) model using a Root Mean Squared Error (Rmse) loss function, 10 epochs, 0.1 dropout, and batch size of 16. The country list contains the following 21 MENA countries: Egypt, Morocco, Tunisia, Libya, Sudan, Mauritania, Jordan, Lebanon, Turkey, Syria, Egypt, Iraq, Saudi Arabia, Yemen, Cyprus, Qatar, Oman, Iran, United Arab Emirates, Kuwait and Bahrain. The model was trained on two V100 GPUs each with 24 GB memory.
+We ran the Wikipedia crawler with the countries specified above to reireive their geo-located Wikipedia articles. Table 1 below shows number of retrieved articles per country.
+| Country | Number of Articles |
+----------- | -----------
+| Jordan | 392 |
+| Lebanon | 819 |
+| Turkey | 10272 |
+| Syria | 1237 |
+| Egypt | 1289 |
+| Iraq | 569 |
+| Saudi Arabia | 384 |
+| Yemen | 788 |
+| Cyprus | 817 |
+| Qatar | 247 |
+| Oman | 166 |
+| Iran | 11889 |
+| United Arab Emirates | 478 |
+| Kuwait | 167 |
+| Bahrain | 193 |
+| Morocco | 1023 |
+| Tunisia | 576 |
+| Libya | 188 |
+| Sudan | 185 |
+| Mauritania | 85 |
+
+Then we devided the data into training and test sets with (0.7, 0.3) ratio, respectivaly and trained our Wikipedia Embedding (WE) model using a Root Mean Squared Error (Rmse) loss function, 10 epochs, 0.1 dropout, and batch size of 16. The country list contains the following 21 MENA countries: Egypt, Morocco, Tunisia, Libya, Sudan, Mauritania, Jordan, Lebanon, Turkey, Syria, Egypt, Iraq, Saudi Arabia, Yemen, Cyprus, Qatar, Oman, Iran, United Arab Emirates, Kuwait and Bahrain. The model was trained on two V100 GPUs each with 24 GB memory.
 
 ## Results
 We ran the expirement with different similarity lower score thresholds and recordeed the Rmse value for each. figure 1 shows the recorded observed Rmse per epoch for each test.
